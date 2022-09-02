@@ -1,0 +1,13 @@
+name: nginx-laravel
+type: service
+from: nginx-php
+title: Nginx (Laravel)
+
+update: auto
+    
+labels:
+- laravel
+
+env:
+- name: NGINX_VHOST_PRESET
+  value: php
