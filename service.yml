@@ -8,6 +8,12 @@ update: auto
 labels:
 - laravel
 
+settings:
+- name: docroot
+  title: Nginx docroot
+  default: public
+  var: DOCROOT_SUBDIR
+
 env:
 - name: NGINX_VHOST_PRESET
   value: php
