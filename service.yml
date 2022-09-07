@@ -1,6 +1,6 @@
-name: nginx-laravel
+name: laravel-nginx
 type: service
-from: nginx-php
+from: php-nginx
 title: Nginx (Laravel)
 
 update: auto
