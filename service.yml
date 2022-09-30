@@ -14,6 +14,12 @@ settings:
   default: public
   var: DOCROOT_SUBDIR
 
+volumes:
+- name: files
+  from: backend
+  title: Files
+  path: /mnt/files
+
 env:
 - name: NGINX_VHOST_PRESET
   value: php
