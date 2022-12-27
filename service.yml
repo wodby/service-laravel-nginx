@@ -15,9 +15,9 @@ settings:
   var: DOCROOT_SUBDIR
 
 volumes:
-- name: files
+- name: storage
   from: backend
-  title: Files
+  title: Storage
   path: /mnt/files
 
 env:
