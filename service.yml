@@ -14,9 +14,16 @@ settings:
   default: public
   var: DOCROOT_SUBDIR
 
+links:
+- name: storage
+  title: Storage
+  required: true
+  selectors:
+  - type: storage
+
 volumes:
 - name: storage
-  from: backend
+  link: storage
   title: Storage
   path: /mnt/files
 
