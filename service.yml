@@ -22,4 +22,4 @@ volumes:
 
 env:
 - name: NGINX_VHOST_PRESET
-  value: php
+  value: laravel
