@@ -8,11 +8,20 @@ update: auto
 labels:
 - laravel
 
+build:
+  dockerfile: Dockerfile
+
 settings:
 - name: docroot
   title: Nginx docroot
   default: public
   var: DOCROOT_SUBDIR
+
+configs:
+- name: preset
+  title: Laravel preset
+  filepath: /etc/gotpl/preset/laravel.conf.tmpl
+  config: preset.conf.tmpl
 
 volumes:
 - name: storage
