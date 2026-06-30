@@ -3,7 +3,6 @@ type: service
 from: php-nginx
 title: Nginx (Laravel)
 
-update: auto
     
 labels:
 - laravel
