@@ -10,6 +10,7 @@ labels:
 - laravel
 
 build:
+  link: backend
   dockerfile: Dockerfile
 
 settings:
