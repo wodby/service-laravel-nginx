@@ -6,5 +6,3 @@ ARG COPY_TO
 ARG DOCROOT_SUBDIR
 
 COPY --chown=wodby:wodby ${COPY_FROM}/${DOCROOT_SUBDIR} ${COPY_TO}/${DOCROOT_SUBDIR}
-
-RUN make init -f /usr/local/bin/actions.mk

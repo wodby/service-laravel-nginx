@@ -42,3 +42,5 @@ volumes:
 env:
 - name: NGINX_VHOST_PRESET
   value: laravel
+- name: WODBY_INIT_ACTION
+  value: init
