@@ -11,7 +11,10 @@ labels:
 
 build:
   link: backend
-  dockerfile: Dockerfile
+  # Only the docroot belongs in the web server image; the rest of the
+  # repository is served by the linked PHP service.
+  copyFrom: "${DOCROOT_SUBDIR}"
+  copyTo: "${DOCROOT_SUBDIR}"
 
 settings:
 - name: docroot
