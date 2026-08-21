@@ -21,7 +21,6 @@ settings:
   title: Nginx docroot
   default: public
   var: DOCROOT_SUBDIR
-  build: true
 
 configs:
 - name: preset
