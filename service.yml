@@ -12,9 +12,9 @@ labels:
 build:
   link: backend
   # Only the docroot belongs in the web server image; the rest of the
-  # repository is served by the linked PHP service.
-  copyFrom: "${DOCROOT_SUBDIR}"
-  copyTo: "${DOCROOT_SUBDIR}"
+  # repository stays with the linked PHP service. The same subdirectory is used
+  # on both sides so both images resolve the docroot to the same absolute path.
+  copySubdir: "{{settings.docroot}}"
 
 settings:
 - name: docroot
