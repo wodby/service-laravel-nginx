@@ -11,14 +11,16 @@ labels:
 
 build:
   link: backend
-  dockerfile: Dockerfile
+  # Only the docroot belongs in the web server image; the rest of the
+  # repository stays with the linked PHP service. The same subdirectory is used
+  # on both sides so both images resolve the docroot to the same absolute path.
+  copySubdir: "{{settings.docroot}}"
 
 settings:
 - name: docroot
   title: Nginx docroot
   default: public
   var: DOCROOT_SUBDIR
-  build: true
 
 configs:
 - name: preset
@@ -42,3 +44,5 @@ volumes:
 env:
 - name: NGINX_VHOST_PRESET
   value: laravel
+- name: WODBY_INIT_ACTION
+  value: init
