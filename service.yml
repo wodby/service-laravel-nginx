@@ -2,7 +2,7 @@ name: laravel-nginx
 type: service
 from: php-nginx
 fromVersionConstraint: "^1.0.0"
-fromVersion: "1.0.8"
+fromVersion: "1.0.9"
 title: Nginx (Laravel)
 
 
