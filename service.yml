@@ -29,11 +29,6 @@ configs:
   default:
     source: image
     filepath: /etc/gotpl/presets/laravel.conf.tmpl
-- name: preset
-  title: Laravel preset
-  filepath: /etc/gotpl/preset/laravel.conf.tmpl
-  config: preset.conf.tmpl
-  version: '1.25'
 
 volumes:
 - name: storage
