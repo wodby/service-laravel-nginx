@@ -25,7 +25,7 @@ settings:
 configs:
 - name: preset
   title: Laravel preset
-  filepath: /etc/gotpl/preset/laravel.conf.tmpl
+  filepath: /etc/gotpl/presets/laravel.conf.tmpl
   default:
     source: image
     filepath: /etc/gotpl/presets/laravel.conf.tmpl
